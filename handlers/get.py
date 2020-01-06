@@ -14,6 +14,7 @@ def get(event, context):
 
     # create a response
     response = {
+        "headers" : {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'},
         "statusCode": 200,
         "body": json.dumps(result)
     }
